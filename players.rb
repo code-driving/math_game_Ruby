@@ -8,12 +8,3 @@ class Players
   end
   
 end
-
-# Plan
-# 1. class Players
-#   attr_accessor :score, :turn
-  
-#   methods: 
-#   1. def inititalize 
-#     @score = 3 (initial for both players)
-    # @turn = false (initial)

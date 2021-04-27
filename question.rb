@@ -1,10 +1,6 @@
-
-# 2. class Question
-# attr_accessor (or attr_reader ?) :evaluate
-
 class Question
 
-  attr_reader :evaluate
+  attr_reader :evaluator
   
   def initialize()
   
@@ -13,7 +9,7 @@ class Question
     @solution = @first_number + @second_number
     @question = "What does #{@first_number} plus #{@second_number} equal?"
     @answer = nil
-    @evaluate = nil
+    @evaluator = nil
     # puts "class Question initialized"
   end
   
@@ -24,12 +20,14 @@ class Question
     
     if @answer != @solution
       puts "You lost one life"
-      @evaluate = false
+      @evaluator = false
     else 
       puts "You gave the correct answer"
-      @evaluate = true
+      @evaluator = true
     end
+    @evaluator
   end
 end
+
 
 
